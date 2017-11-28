@@ -47,6 +47,7 @@ h1{
 	text-align: center;
 	background-color: transparent;
 	padding: 5px;
+    padding-top: 175px;
 	-webkit-animation-name: bio;
 	-webkit-animation-fill-mode:forwards;
 	-webkit-animation-duration: 4s;
@@ -75,4 +76,3 @@ a:hover{
 	height: 1000px;
 
 }
-
