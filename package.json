@@ -5,7 +5,6 @@
   "description": "Anant Singh Portfolio",
   "dependencies": {
     "bigslide": "*",
-    "feather-icons": "*"
   },
   "scripts": {}
 }
