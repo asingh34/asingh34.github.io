@@ -6,22 +6,45 @@
 	<link rel="stylesheet" type="text/css" href="css/navigation2.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Anant Singh</title>
+
+    <!-- bigslide menu -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="node_modules/bigslide/dist/bigSlide.js"></script>
+
+    <link rel="stylesheet" href="css/bigslide-simple.css">
+
+    <!-- feather icons -->
+    <script src="./node_modules/feather-icons/dist/feather.min.js"></script>
+
+
+    <script>
+        $(document).ready(function() {
+            feather.replace()
+            $('.menu-link').bigSlide();
+        });
+    </script>
+
 </head>
 
 
 <body class="container">
 
-
-	<nav class="menu">
+    <nav id="menu" class="panel" role="navigation">
 
 		<ul>
-			<li><a href="index.html">HOME</a></li>
-			<li><a  href="about.html">ABOUT</a></li>
-			<li><a href="works.html">WORKS</a></li>
-			<li><a href="resume.html">RESUME</a></li>
-			<li><a class="current" href="contact.html">CONTACT</a></li>
+			<li><a class="current" href="index.html">HOME</a></li> <br>
+			<li><a href="about.html">ABOUT</a></li> <br>
+			<li><a href="works.html">WORKS</a></li> <br>
+			<li><a href="resume.html">RESUME</a></li> <br> 
+			<li><a href="contact.html">CONTACT</a></li> <br>
 			
 		</ul>
+    </nav>
+    <div class="wrap push">
+        <a href="#menu" class="menu-link">
+            <i data-feather="menu" style="height:50px; width:50px; stroke:white;"></i>
+        </a>
+
 
 	<section class="bio">
 <!--
@@ -33,7 +56,7 @@
 		
 
 	</section>
-
+    </div>
 
 </body>
 </html>
