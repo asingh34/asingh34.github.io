@@ -1,5 +1,6 @@
 body{
 	color: white;
+    overflow: hidden;
 	font-family: Gothic, sans-serif;
 	background-image: url(../images/bg.jpg);
 	background-repeat: no-repeat;
@@ -47,5 +48,4 @@ body{
 	50% {color: pink;}
 	100%{color: white;}
 }
-
 
