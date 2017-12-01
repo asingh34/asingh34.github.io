@@ -14,7 +14,10 @@
     <link rel="stylesheet" href="css/bigslide-simple.css">
 
     <!-- feather icons -->
-  <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+
+    <!-- sss slider -->
+    <link rel="stylesheet" href="sss/sss.css">
 
     <script>
         $(document).ready(function() {
@@ -44,19 +47,34 @@
             <i data-feather="menu" style="height:50px; width:50px; stroke:white;"></i>
         </a>
 
-
 	<section class="bio">
-<!--
-		<h1><em>RESUME</em></h1>
--->
-		<object class="pdf" data="Asingh_MayCurrent2017.pdf" type="application/pdf" >
-  			<p>Resume<a href="Asingh_MayCurrent2017.pdf">to the PDF!</a></p>
-		</object>
+		<h1><em>MY WORK</em></h1>
+
+		<div class="sizer">
+			<div class="slider">
+                <div class="thumbnail">
+				    <img class= "squish" src="images/pj3.png" alt="Project 3">
+                </div>
+                <div class="thumbnail">
+				    <img class= "squish" src="images/mountain.jpg" alt="Mountain">
+                </div>
+
+			</div>
+		</div>
+
+	<script src="sss/sss.min.js"></script>
+
+	<script>
+				$('.slider').sss({
+					slideShow : true, 
+					startOn : 0, 
+					transition : 400, 
+					speed : 3500, 
+					showNav : true 	
+				});
+	</script>
 
 
-		
-
-	</section>
     </div>
 
 </body>
