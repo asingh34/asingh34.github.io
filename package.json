@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "private": true,
+  "name": "anant_singh_portfolio",
+  "description": "Anant Singh Portfolio",
+  "dependencies": {
+    "bigslide": "*",
+    "feather-icons": "*"
+  },
+  "scripts": {}
+}
