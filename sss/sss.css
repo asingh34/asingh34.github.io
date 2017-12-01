@@ -26,7 +26,6 @@
 	position: relative;
 	display: block;
 }
-
 .sssnext, .sssprev {
 	width: 25px;
 	height: 100%;
@@ -38,12 +37,14 @@
 
 .sssprev {
 	left: 3%;
-	background-position: 0 50%;
+	/* background-position: 0 50%; */
+	background-position: 0 10px;
 }
 
 .sssnext {
 	right: 3%;
-	background-position: -26px 50%;
+	/* background-position: -26px 50%; */
+	background-position: -26px 10px;
 }
 
 .sssprev:hover, .sssnext:hover {
