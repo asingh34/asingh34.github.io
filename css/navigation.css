@@ -7,7 +7,6 @@ ul{
 	position: fixed;
 	top: 0px;
 	width: 100%;
-    z-index:1;
 
 }
 
@@ -30,6 +29,9 @@ li a{
 
 }
 
+/* navigation */
+
+/*
 nav a:hover{
 	color: white;
 	background-color:thistle;
@@ -40,7 +42,6 @@ nav a:hover{
 	color: pink;
 }
 
-
 @media (max-width: 500px){
 	nav li {
 		display: block;
@@ -49,6 +50,7 @@ nav a:hover{
 
 }
 
+*/
 
 @-webkit-keyframes menu {
 	0% {color: transparent;}
