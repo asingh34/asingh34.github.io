@@ -22,7 +22,15 @@
     <script>
         $(document).ready(function() {
             feather.replace()
-            $('.menu-link').bigSlide();
+            $('.menu-link').bigSlide({
+                easyClose : true,
+                afterOpen : function() {
+                    $('.menu-link').css('visibility', 'hidden')
+                },
+                afterClose : function() { 
+                    $('.menu-link').css('visibility', 'visible')
+                }
+            });
         });
     </script>
 
@@ -39,7 +47,7 @@
 			<li><a href="works.html">WORKS</a></li> <br>			
 		</ul>
     </nav>
-    <div class="wrap push">
+    <div>
         <a href="#menu" class="menu-link">
             <i data-feather="menu" style="height:50px; width:50px; stroke:white;"></i>
         </a>
