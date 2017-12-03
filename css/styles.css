@@ -37,13 +37,23 @@ body{
     float: right;
 }   
 
-.title-text {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
+@media (max-width: 499px){
+    .title-text {
+        position: relative;
+        top : 30%;
+        width: 100%;
+        text-align: center;
+    }
 }
 
+@media (min-width: 500px){
+    .title-text {
+        position: relative;
+        top : 40%;
+        width: 95%;
+        text-align: right;
+    }
+}
 @-webkit-keyframes title {
 	0% {color: transparent;}
 	50% {color: pink;}
