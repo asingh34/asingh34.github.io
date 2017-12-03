@@ -1,0 +1,46 @@
+nav a:hover{
+	background-color: salmon;
+	color: white;
+
+
+
+}
+
+nav a{
+	display: table-cell;
+	padding: 8px;
+	color: white;	
+	
+}
+
+
+nav ul{
+	list-style-type:none; 
+	margin: 20px;
+	border-collapse: collapse;
+	
+
+	
+}
+
+nav li{
+	display: table-cell;
+	border: 1px solid black;
+
+}
+
+
+.current{
+	background-color: pink;
+	color: white;
+}
+
+@media (max-width: 500px){
+	nav li {
+		display: block;
+
+	}
+
+}
+
+

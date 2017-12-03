@@ -1,0 +1,170 @@
+
+body{
+	color: white;
+	font-family: Helvetica, Arial, Trebuchet, sans-serif;
+	background-image: url(../images/mb.jpg);
+	
+
+}
+
+header{
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	padding: 10px;
+	background-color:rgb(102,102,153);
+	margin: 5px;
+
+}
+
+
+figure{
+	float: right;
+	border: solid white 3px;
+	padding: 0px;
+}
+
+figcaption{ 
+	text-align: center;
+}
+
+h1{
+	border-bottom: solid pink 1px;
+}
+
+h2{
+	font-weight:bold;
+	padding: 15px;
+	background-color: transparent;
+	text-align: left;
+	border-bottom: solid white 3px;
+	background-color: salmon;
+	margin: 20px;
+
+}
+
+h3{
+	font-weight:bold;
+	padding: 10px;
+	background-color: rgb(102,102,153);
+
+}
+
+h4{
+	font-weight:bold;
+	padding: 5px;
+	background-color: rgb(102,102,153); 
+
+}
+h5{
+	color: transparent;
+}
+
+
+p{
+	margin-top:20px;	
+	background-color: rgb(148, 148, 184);
+	padding: 20px;
+
+}
+
+ul{
+	padding:15px;
+	background-color: rgb(148, 148, 184);
+}
+
+a{
+	color:salmon;
+	text-decoration:none;
+}
+
+a:hover{
+	color:red;
+	
+}
+
+
+section { 
+	display: flex;
+	padding: 15px
+}
+
+article{
+	padding: 15px
+
+}
+aside{ 
+	padding: 15px
+}
+
+
+footer{
+	text-align: center;
+	color: black;
+	background-color: salmon;
+}
+
+.content{
+	padding: 20px;
+}
+
+
+.container{ 
+	margin: 0 auto; 
+	width: 90%; 
+	max-width: 960px; 
+}
+
+.extra{
+	padding:20px;
+}
+
+.intro{
+	display: inline-block;
+}
+
+.bio{
+	margin: 2px;
+	padding: 20px;
+	width: 90%;
+
+}
+
+.sizer{
+	margin: 50px auto;
+	width: 60%;
+	text-align: center;
+}
+
+.squish {
+	width: 100%;
+}
+
+.subh{
+	text-align: center;
+	padding:20px;
+}
+
+.table{
+	border:solid black 1px;
+}
+
+
+
+table{
+	background-color: rgb(148, 148, 184);
+}
+
+
+@media (max-width: 960px) {
+	  section {
+		display: block;
+		width: auto;
+	}
+}
+
+@media (max-width: 480px) {
+	nav li {
+		display: block;
+	}
+}
