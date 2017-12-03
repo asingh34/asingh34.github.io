@@ -5,8 +5,8 @@
 
 .panel {
     position: fixed;
-    left: -15.625em; /*or width of your navigation panel*/
-    width: 15.625em; /*should match the above value*/
+    left: -150px; /*or width of your navigation panel*/
+    width: 150px; /*should match the above value*/
 }
 
 /*  
@@ -22,15 +22,35 @@
     padding: 0px;
 }
 
-.panel {
-    background: #transparent;
-    font-size: xx-large;
-}
 
 .panel a {
     color: #fff;
 }
 
-.panel ul {
-    height: 150px !important;
+
+
+
+@media (max-width: 1099px){
+    .panel {
+        font-size: large;
+        font-weight: bold;
+        opacity: 0.9;
+    }
+
+    .panel ul {
+        height: 150px !important;
+    }
+}
+
+@media (min-width: 1100px){
+    .panel {
+        font-size: xx-large;
+        opacity: 0.9;
+    }
+
+    .panel ul {
+        width: 150px !important;
+        height: 150px !important;
+    }
+
 }
