@@ -30,3 +30,7 @@
 .panel a {
     color: #fff;
 }
+
+.panel ul {
+    height: 150px !important;
+}
