@@ -13,9 +13,6 @@ ul{
 li{
 	display: inline-block;
     padding : 10px;
-
-
-
 }
 
 li a{
@@ -26,6 +23,7 @@ li a{
 
 }
 
+/*
 nav a:hover{
 	color: white;
 	background-color:thistle;
@@ -40,8 +38,7 @@ nav a:hover{
 @media (max-width: 500px){
 	nav li {
 		display: block;
-
 	}
 
 }
-
+*/
