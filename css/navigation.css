@@ -10,9 +10,21 @@ ul{
 
 }
 
-li{
-	display: inline-block;
-    padding : 10px;
+
+@media (max-width: 499px){
+    li{
+        display: inline-block;
+        padding : 10px;
+        float : left;
+    }
+}
+
+@media (min-width: 500px){
+    li{
+        display: inline-block;
+        padding : 10px;
+    }
+
 }
 
 li a{
