@@ -38,6 +38,7 @@
     }
 
     .panel ul {
+        width: 100% !important;
         height: 150px !important;
     }
 }
