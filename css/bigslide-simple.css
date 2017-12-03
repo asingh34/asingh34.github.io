@@ -38,12 +38,11 @@
     }
 
     .panel ul {
-        width: 100% !important;
         height: 150px !important;
     }
 }
 
-@media (min-width: 1100px){
+@media (in-width: 1100px){
     .panel {
         font-size: xx-large;
         opacity: 0.9;
