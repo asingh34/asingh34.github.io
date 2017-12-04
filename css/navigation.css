@@ -32,9 +32,10 @@ li a{
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
+/*
 	-webkit-animation-name: menu;
 	-webkit-animation-duration: 7s;
-
+*/
 
 
 }
@@ -61,10 +62,11 @@ nav a:hover{
 }
 
 */
-
+/*
 @-webkit-keyframes menu {
 	0% {color: transparent;}
 	
 	50%{color: pink;}
 	100%{color: white;}
 }
+*/
