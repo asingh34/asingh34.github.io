@@ -16,8 +16,10 @@
     <!-- feather icons -->
     <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
 
-    <!-- sss slider -->
-    <link rel="stylesheet" href="sss/sss.css">
+    
+    <!-- flex slider -->
+    <link rel="stylesheet" href="node_modules/flexslider/flexslider.css" type="text/css">
+    <script src="node_modules/flexslider/jquery.flexslider.js"></script>
 
     <script>
         $(document).ready(function() {
@@ -55,19 +57,20 @@
 
 	<section class="bio">
 
-		<div class="sizer">
+	    <div class="sizer">
         <div class="slide-menu">
 				<ul>
-					<li class="current">Web</li>
+					<li class="glow">Web</li>
 					<li>Javascript</a></li>
 					<li>Java</a></li>
 					<li>Audio</a></li>
 				</ul>
         </div>
+			<div class="flexslider flexslider-overrides" >
+                <ul class="slides">
 
-			<div class="slider">
-
-                <div>
+                <li>
+                <div class="slide-container">
                     <div class="slide-header">
                         Titans Of Industry
                     </div>
@@ -78,13 +81,14 @@
                         Site : <a href="./projects/project3/index.html"> https://asingh34.github.io/projects/project3/index.html</a>
                     </div>
                 </div>
-
-
-                <div>
+                </li>
+                
+                <li>
+                <div class="slide-container">
                     <div class="slide-header">
                         Currency Converter Module
                     </div>
-                        <img class="slide-media" src="images/moneyformat.jpg" alt="MoneyFormat">
+                    <img  class="slide-media" src="images/moneyformat.jpg" alt="MoneyFormat">
                     <div class="slide-text">
                         Program to format numbers as money strings for various international currency formats using ISO country codes in JavaScript.
 			    <br><br>
@@ -93,27 +97,30 @@
                         Demo : <a href="https://anant1998.github.io/example.html">https://anant1998.github.io/example.html</a>
                     </div>
                 </div>
+                </li>
 
-
+                </ul>
 			</div>
 		</div>
 
 	<script src="sss/sss.js"></script>
 
 	<script>
-				$('.slider').sss({
-					slideShow : true, 
-					startOn : 0, 
-					transition : 400, 
-					speed : 3500, 
-					showNav : true,
-                    callback : function(target) { 
-                        $('.slide-menu ul li').each(function() {
-                            $(this).removeClass('current')
-                        })
-                        $('.slide-menu ul li').eq(target).addClass('current')
-                    }
-				});
+        $(window).load(function() {
+          $('.flexslider').flexslider({
+            animation: "slide",
+            animationLoop : true,
+            pauseOnAction : true,
+            pauseOnHover : false,
+            after : function(target) { 
+                $('.slide-menu ul li').each(function() {
+                    $(this).removeClass('glow')
+                })
+                $('.slide-menu ul li').eq(target.animatingTo).addClass('glow')
+            }
+
+          });
+        });
 	</script>
 
 

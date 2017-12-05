@@ -4,7 +4,8 @@
   "name": "anant_singh_portfolio",
   "description": "Anant Singh Portfolio",
   "dependencies": {
-    "bigslide": "*"
+    "bigslide": "*",
+    "flexslider": "^2.6.4"
   },
   "scripts": {}
 }

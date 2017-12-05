@@ -54,94 +54,87 @@ h1{
 }
 
 
+.sizer{
+    margin: 5%;
+    width: 90%;
+    text-align: center;
+}
+
+.slide-menu {
+    list-style-type: none;
+    text-align: center;
+    position: relative;
+    margin-bottom:20px; 
+    font-weight:bold;
+    text-align: center;
+    border: solid white 1px;
+    width : 100%;
+}
+.slide-menu li {
+    display : inline-block;
+    padding-left: 10px;
+    color : pink;
+}
+/*
+.slide-menu .current {
+    background-color: white;
+}
+*/
+
+.slide-menu .glow {
+   text-shadow: -1px 1px 20px #ffc, 1px -1px 20px #fff;
+
+    -webkit-transition: text-shadow 250ms linear 0s;
+    -moz-transition: text-shadow 250ms linear 0s;
+    -o-transition: text-shadow 250ms linear 0s;
+    transition: text-shadow 250ms linear 0s;
+}
+
+
+.flexslider-overrides {
+    background-color : transparent !important;
+    border-color : transparent !important;
+}
+
+.slide-container {
+/*
+    position: absolute;
+    height : 100%;
+*/
+}
+
+.slide-header {
+    font-weight:bold;
+    text-align: center;
+    color : white;
+    /*background-color: transparent;*/
+    padding : 10px;
+}
+.slide-media {
+    height : 300px;
+    width : 100%;
+    overflow-y : hidden;
+    overflow-x : hidden;
+}
+.slide-media-overlay {
+    position: absolute;
+    background-color: transparent;
+}
+
+.slide-text {
+    position: relative; 
+    text-align:left;
+    color: white;
+    /*background-color: transparent;*/
+    padding : 10px;
+}
+
 @media only screen and (max-width: 599px){
-    .sizer{
-        margin: 5%;
-        width: 90%;
-        text-align: center;
-    }
-
-    .slide-menu {
-        list-style-type: none;
-	    text-align: center;
-        position: relative;
-        margin-bottom:20px; 
-        font-weight:bold;
-        text-align: center;
-        border: solid white 1px;
-        width : 100%;
-    }
-    .slide-menu li {
-        display : inline-block;
-        padding-left: 10px;
-        color : pink;
-    }
-    .slide-menu .current {
-        background-color: white;
-    }
-
-    .slide-header {
-        margin-bottom:20px; 
-        font-weight:bold;
-        text-align: center;
-    }
-    .slide-media {
-        height : 300px;
-        width : 100%;
-        overflow-y : hidden;
-        overflow-x : hidden;
-    }
-    .slide-text {
-        position: relative; 
-        margin-top:20px; 
-        text-align:left;
-    }
 
 }
 
 @media only screen and (min-width: 600px){
-    .sizer{
-        margin: 5%;
-        width: 90%;
-        text-align: center;
-    }
 
-    .slide-menu {
-	    text-align: center;
-        position: relative;
-        margin-bottom:20px; 
-        font-weight:bold;
-        text-align: center;
-        border: white solid 2px;
-    }
-    
-    .slide-menu li {
-        display : inline-block;
-        padding-left: 10px;
-        color: pink;
-    }
-    .slide-menu .current {
-        background-color: pink;
-        color: white;
-        padding-left: 0px;
-    }
-    .slide-header {
-        margin-bottom:20px; 
-        font-weight:bold;
-        text-align: center;
-    }
-    .slide-media {
-        height : 300px;
-        width : 100%;
-        overflow-y : hidden;
-        overflow-x : hidden;
-
-    }
-    .slide-text {
-        position: relative; 
-        margin-top:20px; 
-        text-align:left;
-    }
 }
 
 @-webkit-keyframes bio {

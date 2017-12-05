@@ -4,6 +4,8 @@
 
 $.fn.sss = function(options) {
 
+
+
 // Options
 
 	var settings = $.extend({
@@ -15,6 +17,28 @@ $.fn.sss = function(options) {
     callback : null
 	}, options);
 
+// Methods
+    var timeout;
+    var methods = {
+        pause : function() {
+            console.log('pausing', settings.slideShow);
+            settings.slideShow = false;
+            console.log('paused', settings.slideShow);
+            if (timeout != null) {
+                clearTimeout(timeout);
+            }
+            timeout = setTimeout(function() {
+                console.log('restarting', settings.slideShow);
+                settings.slideShow = true;
+                console.log('restarted', settings.slideShow);
+            }, 10000)
+        }
+    }
+
+    if (typeof options === 'string') {
+        return methods[options]
+    }
+    
 	return this.each(function() {
 
 // Variables
@@ -33,7 +57,6 @@ $.fn.sss = function(options) {
 	key,
 	prev,
 	next,
-
 // Reset Slideshow
 
 	reset_timer = settings.slideShow ? function() {
@@ -59,7 +82,7 @@ $.fn.sss = function(options) {
 	    animating = false;
         settings.callback(target)
 	});
-
+    console.log ('slideShow: ', settings.slideShow)
 	reset_timer();
 
 	}};
@@ -100,6 +123,7 @@ $.fn.sss = function(options) {
 	if (key === 39) { next_slide() }
 	else if (key === 37) { prev_slide() }
 	});
+
 
 	});
 // End
