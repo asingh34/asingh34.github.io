@@ -1,4 +1,4 @@
-ul{
+#menu{
 	list-style-type: none;
 	margin:0;
 	padding:0px;
@@ -12,7 +12,7 @@ ul{
 
 
 @media (max-width: 499px){
-    li{
+    #menu li{
         display: inline-block;
         padding : 10px;
         float : left;
@@ -20,14 +20,14 @@ ul{
 }
 
 @media (min-width: 500px){
-    li{
+    #menu li{
         display: inline-block;
         padding : 10px;
     }
 
 }
 
-li a{
+#menu li a {
 	color:white;
 	text-align: center;
 	padding: 14px 16px;

@@ -11,7 +11,8 @@ $.fn.sss = function(options) {
 	startOn : 0,
 	speed : 3500,
 	transition : 400,
-	arrows : true
+	arrows : true,
+    callback : null
 	}, options);
 
 	return this.each(function() {
@@ -55,7 +56,8 @@ $.fn.sss = function(options) {
 	slides.not(target_slide).fadeOut(transition);
 
 	slider.animate({paddingBottom: get_height(target)}, transition,  function() {
-	animating = false;
+	    animating = false;
+        settings.callback(target)
 	});
 
 	reset_timer();

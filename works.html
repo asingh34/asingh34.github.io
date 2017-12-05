@@ -54,9 +54,17 @@
         </a>
 
 	<section class="bio">
-		<h1><em>MY WORK</em></h1>
--
+
 		<div class="sizer">
+        <div class="slide-menu">
+				<ul>
+					<li class="current">Web</li>
+					<li>Javascript</a></li>
+					<li>Java</a></li>
+					<li>Audio</a></li>
+				</ul>
+        </div>
+
 			<div class="slider">
 
                 <div>
@@ -90,7 +98,7 @@
 			</div>
 		</div>
 
-	<script src="sss/sss.min.js"></script>
+	<script src="sss/sss.js"></script>
 
 	<script>
 				$('.slider').sss({
@@ -98,7 +106,13 @@
 					startOn : 0, 
 					transition : 400, 
 					speed : 3500, 
-					showNav : true 	
+					showNav : true,
+                    callback : function(target) { 
+                        $('.slide-menu ul li').each(function() {
+                            $(this).removeClass('current')
+                        })
+                        $('.slide-menu ul li').eq(target).addClass('current')
+                    }
 				});
 	</script>
 
