@@ -84,6 +84,10 @@ h1{
     color : pink;
 }
 
+.slide-menu li:hover {
+    cursor: pointer;
+}
+
 .slide-menu .glow {
    text-shadow: -1px 1px 20px #ffc, 1px -1px 20px #fff;
 
