@@ -52,7 +52,7 @@ h1{
 	color: white;
 	text-align: justify;
 	background-color: transparent;
-	padding: 5px;
+	/*padding: 5px;*/
 	-webkit-animation-name: bio;
 	-webkit-animation-fill-mode:forwards;
 	-webkit-animation-duration: 4s;
