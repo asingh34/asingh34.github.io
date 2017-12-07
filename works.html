@@ -69,51 +69,81 @@
 			<div class="flexslider flexslider-overrides" >
                 <ul class="slides">
 
+
                 <li>
                 <div class="slide-container">
                     <div class="slide-header">
                         Titans Of Industry
                     </div>
-                    <embed class="slide-media" src="./projects/project3/index.html" />
+
+                    <div class="slide-media-container">
+                        <div class="slide-media">
+                        <embed src="./projects/project3/index.html" />
+                        </div>
+                        <div class="slide-media-overlay" onclick="handleClick('./projects/project3/index.html')">
+                        </div>
+                    </div>
+
                     <div class="slide-text">
                         Website Design project done as part of coursework. The goal of the project is to showcase luminaries of the tech industry
 			    <br><br>
-                        Site : <a href="./projects/project3/index.html"> https://asingh34.github.io/projects/project3/index.html</a>
+                        Source: <a href="https://github.com/asingh34/asingh34.github.io/tree/master/projects/project3">github</a>
                     </div>
                 </div>
                 </li>
+
+
                 
                 <li>
                 <div class="slide-container">
                     <div class="slide-header">
                         Currency Converter Module
                     </div>
-                    <img  class="slide-media" src="images/moneyformat.jpg" alt="MoneyFormat">
+                    <div class="slide-media-container">
+                        <div class="slide-media">
+                        <img  src="images/moneyformat.jpg" alt="MoneyFormat">
+                        </div>
+                        <div class="slide-media-overlay" onclick="handleClick('https://anant1998.github.io/example.html')" >
+                        </div>
+                    </div>
                     <div class="slide-text">
                         Program to format numbers as money strings for various international currency formats using ISO country codes in JavaScript. Done as part of internship for Netgables Inc. Seattle WA during summer 2016.
 			    <br><br>
-                        Source: <a href="https://github.com/anant1998/moneyFormat"> https://github.com/anant1998/moneyFormat</a>
+                        Source: <a href="https://github.com/anant1998/moneyFormat">github</a>
                         <br>
-                        Demo : <a href="https://anant1998.github.io/example.html">https://anant1998.github.io/example.html</a>
                     </div>
                 </div>
                 </li>
+
+
 
                 <li>
                 <div class="slide-container">
                     <div class="slide-header">
                         Projectile Motion
                     </div>
-                    <img  class="slide-media" src="images/java-projectiles.png" alt="Java projectile motion">
+
+                    <div class="slide-media-container">
+                        <div class="slide-media">
+                           <img  src="images/java-projectiles.png" alt="Java projectile motion">
+                        </div>
+<!--
+                        <div class="slide-media-overlay" onclick="handleClick('xxx')">
+                        </div>
+-->
+                    </div>
+
                     <div class="slide-text">
                         Java program to model projectile motion. Done as part of coursework in Java programming language.
         			    <br><br>
-                        Source: <a href="https://github.com/asingh34/asingh34.github.io/tree/master/projects/CSC171">https://github.com/asingh34/asingh34.github.io/tree/master/projects/CSC171</a>
+                        Source: <a href="https://github.com/asingh34/asingh34.github.io/tree/master/projects/CSC171">github</a>
 
 			    <br><br>
                     </div>
                 </div>
                 </li>
+
+
 
                 <li>
                 <div class="slide-container">
@@ -121,24 +151,34 @@
                         Audio Sculpture
                     </div>
 
-                    <table class="slide-media">
-                    <tr>
-                    <td>
-                    <audio  style="float:left; width:150px;" controls preload="auto">
-                        <source src="projects/SA131/exercise.wav" type="audio/wav">
-                        Your browser does not support the audio tag.
-                    </audio>
-                    <div style="float:left;width:100px;text-align:left;padding:5px;"> <br> HAL </div>
-                    </td>
-                    <tr>
-                    <td style="text-align:center;">
-                    <audio style="float:left; width:150px;" controls preload="auto">
-                        <source src="projects/SA131/project.wav" type="audio/wav">
-                        Your browser does not support the audio tag.
-                    </audio>
-                    <div style="float:left;width:100px;text-align:left;padding:5px;"> <br> SENTINEL </div>
-                    </tr>
-                    </table>
+
+                    <div class="slide-media-container">
+                        <div class="slide-media">
+                            <table>
+                            <tr>
+                            <td>
+                            <audio  style="float:left; width:150px;" controls preload="auto">
+                                <source src="projects/SA131/exercise.wav" type="audio/wav">
+                                Your browser does not support the audio tag.
+                            </audio>
+                            <div style="float:left;width:100px;text-align:left;padding:5px;"> <br> HAL </div>
+                            </td>
+                            <tr>
+                            <td style="text-align:center;">
+                            <audio style="float:left; width:150px;" controls preload="auto">
+                                <source src="projects/SA131/project.wav" type="audio/wav">
+                                Your browser does not support the audio tag.
+                            </audio>
+                            <div style="float:left;width:100px;text-align:left;padding:5px;"> <br> SENTINEL </div>
+                            </tr>
+                            </table>
+                        </div>
+<!--
+                        <div class="slide-media-overlay" onclick="handleClick(3)">
+                        </div>
+-->
+                    </div>
+
 
                     <div class="slide-text">
                         Audio sculptures done as part of Sculpture course. Employed techniques borrowed from electronic music.
@@ -146,6 +186,8 @@
                     </div>
                 </div>
                 </li>
+
+
 
                 </ul>
 			</div>
@@ -171,6 +213,11 @@
 
           });
         });
+
+        function handleClick(url) {
+            console.log(url)
+            $('<a href="' + url + '" target="blank"></a>')[0].click();
+        }
 	</script>
 
 
