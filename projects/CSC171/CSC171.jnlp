@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jnlp spec="1.0+">
+    <information>
+        <title>CSC171 project</title>
+        <vendor>Anant Singh</vendor>
+    </information>
+    <resources>
+        <!-- Application Resources -->
+        <j2se version="1.7+"
+              href="http://java.sun.com/products/autodl/j2se"/>
+        <jar href="file:////home/kavi/anant/summer-2018/asingh34.github.io/projects/CSC171/CSC171.jar"
+            main="true" />
+
+    </resources>
+    <application-desc
+         name="CSC171 project"
+         main-class=
+           "build.Frame01"
+         width="300"
+         height="300">
+     </application-desc>
+     <update check="background"/>
+</jnlp>  
