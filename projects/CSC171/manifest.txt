@@ -1,2 +1,0 @@
-Permissions: sandbox
-Application-Name: CSC 171 project
