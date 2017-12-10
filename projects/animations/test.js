@@ -1,12 +1,16 @@
 var canvas = document.getElementById('canvas');
+canvas.setAttribute('width', window.innerWidth);
+canvas.setAttribute('height', window.innerHeight);
+canvas.style.top = '0px';
+
 var ctx = canvas.getContext('2d');
 var pi = Math.PI;
 var raf;
 
 var ball = {
-  x: 720,
-  y: 900,
-  radius: 150,
+  x: window.innerWidth/2,
+  y: window.innerHeight,
+  radius: window.innerWidth/4,
   color: 'orange',
   draw: function() {
     ctx.beginPath();
@@ -16,7 +20,7 @@ var ball = {
     ctx.fill(); 
   },
   getRayCoordinates: function(theta, length) {
-    console.log('getRayCoords', theta, length);
+    //console.log('getRayCoords', theta, length);
     var result = {};
     result.origX = this.x;
     result.origY = this.y;
@@ -24,7 +28,7 @@ var ball = {
     result.y1 = -(this.radius * Math.sin(theta));
     result.x2 = (this.radius + length) * Math.cos(theta);
     result.y2 = -((this.radius + length) * Math.sin(theta));
-    console.log('result', result)
+    //console.log('result', result)
     return result;  
   },
   transparent: function(){
@@ -41,7 +45,7 @@ var line = {
   draw: function(coords,color) {
     ctx.save();
     ctx.translate(coords.origX, coords.origY);
-    ctx.lineWidth = 4;
+    ctx.lineWidth = 3;
     ctx.lineCap = 'round';
     ctx.beginPath();
     ctx.moveTo(coords.x1, coords.y1);
@@ -65,7 +69,7 @@ var bigLimit= 50;
 var smallDirection = 0;
 var bigDirection = 0;
 var angleCounter = 0; 
-var ballY = canvas.height/2;
+var ballY = ball.radius + 150;
 
 
 function animate(){
@@ -75,7 +79,7 @@ function animate(){
   ball.draw()
 
   var toggle=0;
-  var delta = 1/16;
+  var delta = 1/64;
   for (var i = 0; i <=2;  i = i+delta) { 
 
     if (toggle===0){
