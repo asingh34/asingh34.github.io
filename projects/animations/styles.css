@@ -1,4 +1,10 @@
+body {
+    overflow : hidden;
+}
+
 #canvas{
 	background-color: AliceBlue;
     position : absolute;
+    overflow-x : hidden;
+    overflow-y : hidden;
 }

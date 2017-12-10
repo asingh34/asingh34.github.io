@@ -10,7 +10,7 @@ var raf;
 var ball = {
   x: window.innerWidth/2,
   y: window.innerHeight,
-  radius: window.innerWidth/4,
+  radius: Math.min(window.innerWidth/4,150),
   color: 'orange',
   draw: function() {
     ctx.beginPath();
