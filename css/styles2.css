@@ -19,7 +19,7 @@ section{
 .text-content{
     font-size: large;
     background-color: black;
-    margin: 5%;
+    /*margin: 5%;*/
 }
 
 @-webkit-keyframes title {
