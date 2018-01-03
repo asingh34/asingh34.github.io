@@ -18,8 +18,8 @@ section{
 
 .text-content{
     font-size: large;
-    background-color: black;
-    /*margin: 5%;*/
+    /*background-color:black;
+    margin: 5%;*/
 }
 
 @-webkit-keyframes title {
