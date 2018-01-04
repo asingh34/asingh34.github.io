@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" style="overflow-y:hidden;">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/styles2.css">
+	<link rel="stylesheet" type="text/css" href="css/navigation2.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Anant Singh</title>
+
+    <!-- bigslide menu -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="node_modules/bigslide/dist/bigSlide.js"></script>
+
+    <link rel="stylesheet" href="css/bigslide-simple.css">
+
+    <!-- feather icons -->
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+
+    
+    <!-- flex slider -->
+    <link rel="stylesheet" href="node_modules/flexslider/flexslider.css" type="text/css">
+    <script src="node_modules/flexslider/jquery.flexslider.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            feather.replace()
+            $('.menu-link').bigSlide({
+                easyClose : true,
+                menuWidth : '100%',
+                afterOpen : function() {
+                    $('.menu-link').css('visibility', 'hidden')
+                },
+                afterClose : function() { 
+                    $('.menu-link').css('visibility', 'visible')
+                }
+            });
+        });
+    </script>
+
+</head>
+
+
+<body class="container">
+
+
+    <div>
+
+	<section class="bio">
+
+	    <div class="sizer">
+        <div class="slide-menu">
+				<ul>
+					<li class="glow">Audio</li>
+					<li>AI</a></li>
+					<!-- <li>PS</a></li> -->
+				</ul>
+        </div>
+			<div class="flexslider flexslider-overrides" >
+                <ul class="slides">
+
+
+                <li>
+                <div class="slide-container">
+                    <div class="slide-header">
+                        Audio Sculpture
+                    </div>
+
+
+                    <div class="slide-media-container">
+                        <div class="slide-media">
+                            <table>
+                            <tr>
+                            <td>
+                            <audio  style="float:left; width:150px;" controls preload="auto">
+                                <source src="projects/SA131/exercise.wav" type="audio/wav">
+                                Your browser does not support the audio tag.
+                            </audio>
+                            <div style="float:left;width:100px;text-align:left;padding:5px;"> <br> HAL </div>
+                            </td>
+                            <tr>
+                            <td style="text-align:center;">
+                            <audio style="float:left; width:150px;" controls>
+                                <source src="projects/SA131/project.wav" type="audio/wav">
+                                Your browser does not support the audio tag.
+                            </audio>
+                            <div style="float:left;width:100px;text-align:left;padding:5px;"> <br> SENTINEL </div>
+                            </tr>
+                            </table>
+                        </div>
+
+                    </div>
+
+
+                    <div class="slide-text">
+                        Audio sculptures done as part of Sculpture course. Employed techniques borrowed from electronic music.
+                <br><br>
+                    </div>
+                </div>
+                </li>
+
+
+                <li>
+                <div class="slide-container">
+                    <div class="slide-header">
+                        Adobe Illustrator Work Samples
+                    </div>
+                    <div class="slide-media-container">
+                        <div class="slide-media"  style="overflow-y:auto;">
+                        <img  src="./projects/art/ai/drip.svg" alt="Drip"/>
+                        <div> Drip </div>
+                        <img  src="./projects/art/ai/drip.svg" alt="Drip"/>
+                        <div> Drip </div>
+                        </div>
+                    </div>
+                </div>
+                </li>
+
+
+                <!--
+                <li>
+                <div class="slide-container">
+                    <div class="slide-header">
+                        Adobe Photoshop Work Samples
+                    </div>
+
+                </div>
+                </li>
+                -->
+
+                </ul>
+			</div>
+		</div>
+
+	<script src="sss/sss.js"></script>
+
+	<script>
+        $(window).load(function() {
+          $('.flexslider').flexslider({
+            animation: "slide",
+            animationLoop : true,
+            pauseOnAction : true,
+            pauseOnHover : false,
+            directionNav : false,
+            manualControls : '.slide-menu li',
+            before : function(target) { 
+                $('.slide-menu ul li').each(function() {
+                    $(this).removeClass('glow')
+                })
+                $('.slide-menu ul li').eq(target.animatingTo).addClass('glow')
+            }
+
+          });
+        });
+
+        function handleClick(url) {
+            console.log(url)
+            $('<a href="' + url + '" target="_blank"></a>')[0].click();
+        }
+	</script>
+
+
+    </div>
+
+</body>
+</html>
