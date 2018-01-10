@@ -215,7 +215,11 @@
 
         function handleClick(url) {
             console.log(url)
-            $('<a href="' + url + '" target="_blank"></a>')[0].click();
+            //$('<a href="' + url + '" target="_blank"></a>')[0].click();
+            window.open(
+              url,
+              '_blank'
+            );
         }
 	</script>
 
